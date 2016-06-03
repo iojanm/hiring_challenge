@@ -1,0 +1,12 @@
+<phpunit>
+    <listeners>
+        <listener class="SimpleTestListener" file="SimpleTestListener.php" />
+    </listeners>
+    <testsuite name="Workana Class TestsSuite">
+        <directory>./class</directory>
+    </testsuite>
+    <php>
+        <includePath>../</includePath>
+        <cookie name="app" value="hash"/>
+    </php>
+</phpunit>
